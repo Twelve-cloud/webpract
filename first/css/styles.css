@@ -1,0 +1,75 @@
+table {
+  background: #eefc;
+  border: 3px solid #f4f4;
+  text-align: center;
+}
+
+td {
+  border: 2px solid #f8f8;
+  padding: 20px;
+}
+
+td.with_header {
+  background: #adf5;
+}
+
+span.bold-li {
+  font-weight: bold;
+}
+
+span.normal-li {
+  font-weight: normal;
+}
+
+ul {
+	text-align: center;
+}
+
+li {
+  width: 10px;
+}
+
+ol#third-list li {
+  width:auto;
+}
+
+ul.dash-list {
+    list-style: none;
+}
+
+ul.dash-list li:before {
+    content: '-';
+    position: absolute;
+    margin-left: -20px;
+}
+
+@font-face {
+    font-family: 'Impact';
+    src: url('../resource/fonts/impact.ttf');
+}
+
+.numbers-brackets {
+  counter-reset: list;
+}
+
+.numbers-brackets {
+    list-style: none;
+}
+
+.numbers-brackets > li:before {
+    content: counter(list) ") ";
+    counter-increment: list;
+}
+
+.letters-brackets {
+  counter-reset: list;
+}
+
+.letters-brackets {
+    list-style: none;
+}
+
+.letters-brackets > li:before {
+    content: counter(list,lower-latin) ") ";
+    counter-increment: list;
+}
