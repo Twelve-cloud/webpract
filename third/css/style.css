@@ -1,0 +1,259 @@
+* {
+    box-sizing: border-box;
+}
+
+html, body, header, div, span, h1, h2, h3, h4, h5, h6, p, a, ul, li {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+}
+
+
+body {
+    font-family: Verdana, Arial, sans-serif;
+    background-color: #e5e5e5;
+    padding: 0px 450px;
+}
+
+
+header {
+    background-color: #f0f0f0;
+    border-left: 1px solid rgba(99, 97, 97, 0.747);
+    border-right: 1px solid rgba(99, 97, 97, 0.747);
+}
+
+header h1 {
+    font-size: 24px;
+    font-weight: bold;
+    text-transform: capitalize;
+    padding: 10px 20px;
+    text-align: center;
+}
+
+#nav {
+    border-top: 1px solid rgba(99, 97, 97, 0.747);
+    border-bottom: 1px solid rgba(99, 97, 97, 0.747);
+}
+
+#nav ul {
+    font-size: 0px;
+}
+
+#nav li {
+    display: inline-block;
+    list-style-type: none;
+    font-size: 16px;
+    width: 16.5%;
+}
+
+#nav li > a {
+    display: block;
+    text-decoration: none;
+    text-align: center;
+    border-right: 1px solid rgba(99, 97, 97, 0.747);
+    padding: 10px 20px;
+    color: rgba(0, 0, 0, 0.911);
+}
+
+#nav li:last-child a {
+    border: 0px;
+}
+
+#nav li > a:hover {
+    background-color: rgb(221, 207, 189);
+}
+
+
+/* ----------------------------------------------------------------- */
+
+main {
+    font-size: 0px;
+}
+
+#main {
+    display: block;
+    background-color: #f0f0f0;
+    border-left: 1px solid rgba(99, 97, 97, 0.747);
+    border-right: 1px solid rgba(99, 97, 97, 0.747);
+}
+
+.wrapper-main {
+    display: inline-block;
+    font-size: 14px;
+}
+
+#wrapper-content {
+    background-color: #ffffff;
+    border-left: 1px solid rgba(99, 97, 97, 0.747);
+    border-right: 1px solid rgba(99, 97, 97, 0.747);
+}
+
+#wrapper-sidebar1 {
+    width: 12%;
+    height: 100%;
+    border-top: 0px;
+}
+
+#wrapper-sidebar2 {
+    width: 15%;
+    vertical-align: top;
+}
+
+#sidebar2 li {
+    margin: 5px;
+}
+
+#sidebar2 p {
+    margin: 5px 0px;
+}
+
+#sidebar2 a {
+    display: block;
+    margin: 5px 0px;
+}
+
+#wrapper-content {
+    width: 72%;
+    vertical-align: top;
+    padding: 10px;
+}
+
+.sidebar li {
+    list-style-type: none;
+    border-bottom: 1px solid rgba(99, 97, 97, 0.747);
+}
+
+#sidebar1 h2 {
+    font-size: 18px;
+    text-align: center;
+    font-weight: bold;
+    text-transform: capitalize;
+    padding: 5px 10px;
+}
+
+#sidebar1 img {
+    display: block;
+    width: 100%;
+    height: 230px;
+    padding: 5px 5px;
+}
+
+#sidebar1 h3 {
+    font-size: 16px;
+    text-align: center;
+    font-weight: bold;
+    text-transform: capitalize;
+    padding: 5px 10px;
+}
+
+#sidebar2 #help-site {
+    background-color: rgb(104, 93, 82);
+    color: white;
+    text-align: center;
+}
+
+#sidebar2 {
+    border: 2px solid rgba(41, 39, 39, 0.747);
+    margin: 10px;
+}
+
+/* ----------------------------------------------------------------- */
+
+footer {
+    background-color: #f0f0f0;
+    border: 1px solid rgba(99, 97, 97, 0.747);
+}
+
+#footer {
+    text-align: center;
+    font-size: 14px;
+}
+
+#footer li {
+    display: inline-block;
+    list-style-type: none;
+}
+
+#footer a {
+    display: block;
+    text-align: center;
+    padding: 0px 20px;
+    margin: 10px 0px;
+    border-right: 2px solid rgba(99, 97, 97, 0.747);
+    color: rgba(0, 0, 0, 0.911);
+}
+
+#footer li:last-child a {
+    border: 0px;
+}
+
+#footer p {
+    padding: 5px;
+}
+
+/* ----------------------------------------------------------------- */
+
+#content {
+    width: 70%;
+    font-family: sans-serif;
+}
+
+#content h1 {
+    font-size: 2.79rem;
+    font-weight: bold;
+    padding: 0px 0px 30px 0px;
+}
+
+#content h2 {
+    font-size: 2.14rem;
+    font-weight: bold;
+    padding: 0px 0px 60px 0px;
+}
+
+#content h3 {
+    font-size: 1.72rem;
+    font-weight: bold;
+    padding: 0px 0px 30px 0px;
+    margin-top: 60px;
+}
+
+#content .img {
+    text-align: left;
+    margin-bottom: 60px;
+}
+
+#content .img > h6 {
+    text-align: left;
+}
+
+#content .img > h4 {
+    text-align: left;
+    font-size: 1.24rem;
+    font-weight: bold;
+    margin-top: 45px;
+}
+
+#content p {
+    font-size: 1.24rem;
+    font-weight: normal;
+    padding: 0px 0px 30px 0px;
+}
+
+#content p.main-text {
+    font-size:1.36rem;
+    font-weight: normal;
+}
+
+.content {
+    display: inline-block;
+}
+
+.content::after {
+    content: "";
+}
+
+#content-empty-wrapper-1, #content-empty-wrapper-2 {
+    width: 15%;
+}
